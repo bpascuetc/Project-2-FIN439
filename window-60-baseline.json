@@ -1,0 +1,72 @@
+{
+  "tickers": [
+    "VTI",
+    "BND",
+    "SGOV"
+  ],
+  "price_dates": [
+    "2021-09-30",
+    "2026-09-30"
+  ],
+  "monthly_returns": 60,
+  "mandate": {
+    "status": "STUDENT_CONFIRMED_PROJECT2_MANDATE",
+    "tickers": [
+      "VTI",
+      "BND",
+      "SGOV"
+    ],
+    "decision_user": "Student Project2 portfolio decision",
+    "horizon": "Seven-year policy horizon, student-confirmed mandate",
+    "benchmark": "60%VTI/40%BND diagnostic benchmark; distinct from Meridian global-equity benchmark",
+    "objective_annual_decimal": 0.065,
+    "hard_constraint": "At least3%SGOVreserve weight; long-only and fully invested",
+    "reserve_minimum": 0.03,
+    "reserve_eligible": [
+      false,
+      false,
+      true
+    ],
+    "note": "Bernat explicitly confirmed the Project2 mandate October22,2026. This supersedes prior proposed/unapproved status. Recorded as student confirmation, not an independently documented CIO approval."
+  },
+  "baseline_mandate_check": "PASS",
+  "baseline": {
+    "weights": [
+      0.3,
+      0.0,
+      0.7
+    ],
+    "return": 0.06540816090764849,
+    "volatility": 0.04853574091331369,
+    "reserve_weight": 0.7,
+    "grid_mixes": 231,
+    "feasible_mixes": 72
+  },
+  "last_36_months": {
+    "weights": [
+      0.15,
+      0.0,
+      0.85
+    ],
+    "return": 0.06941080313946213,
+    "volatility": 0.019681471932834323,
+    "reserve_weight": 0.85,
+    "grid_mixes": 231,
+    "feasible_mixes": 153
+  },
+  "window_largest_weight_change_pp": 15.000000000000002,
+  "stress_annual_cost_decimal": 0.0025,
+  "cost_stress": {
+    "weights": [
+      0.35,
+      0.0,
+      0.65
+    ],
+    "return": 0.06761774183644198,
+    "volatility": 0.056429702721501204,
+    "reserve_weight": 0.65,
+    "grid_mixes": 231,
+    "feasible_mixes": 66
+  },
+  "cost_largest_weight_change_pp": 4.999999999999999
+}

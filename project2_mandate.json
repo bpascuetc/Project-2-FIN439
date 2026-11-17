@@ -1,0 +1,20 @@
+{
+  "status": "STUDENT_CONFIRMED_PROJECT2_MANDATE",
+  "tickers": [
+    "VTI",
+    "BND",
+    "SGOV"
+  ],
+  "decision_user": "Student Project2 portfolio decision",
+  "horizon": "Seven-year policy horizon, student-confirmed mandate",
+  "benchmark": "60%VTI/40%BND diagnostic benchmark; distinct from Meridian global-equity benchmark",
+  "objective_annual_decimal": 0.065,
+  "hard_constraint": "At least3%SGOVreserve weight; long-only and fully invested",
+  "reserve_minimum": 0.03,
+  "reserve_eligible": [
+    false,
+    false,
+    true
+  ],
+  "note": "Bernat explicitly confirmed the Project2 mandate October22,2026. This supersedes prior proposed/unapproved status. Recorded as student confirmation, not an independently documented CIO approval."
+}
