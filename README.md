@@ -1,27 +1,25 @@
-# Project 2 portfolio tool and Lab 20
+# Project 2 — Investment management application
 
-This local candidate uses the VTI, BND and SGOV mandate Bernat confirmed on October 22, 2026. It carries forward the frozen Lab 15 price data. The final Project 2 repository and Week 12 must-fix list are pending confirmation.
+**AI use.** I used OpenAI Codex to help build the Python app, reproduce portfolio calculations, test failure cases and draft documentation.
 
-With Python 3 and NumPy installed, run this one command from the repository root.
+**Ownership and purpose.** The analysis and decision are mine. This project is for education and does not provide investment advice.
 
-```bash
-python3 run_decision.py
-```
+## Run the app
 
-The result is printed to the terminal. Read the [saved output](docs/decision-output.json) directly on GitHub and compare it with the [decision memo](docs/decision-memo.md).
-
-Decision numbers should match the memo to the displayed precision. The final digits of unrounded floats can vary across environments.
-
-Install the full dependencies before running the tests or launching the interactive tool.
+From the repository root with Python 3.12:
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 -m unittest test_engine -v
-python3 -m streamlit run app.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
 ```
 
-In the app, keep **My fund prices** selected. Adjust one control and read **Current lowest-risk mix** for the allocation and reserve result, or the warning when the grid has no feasible mix. This is a tool check. The separate Lab 20 prediction must be written, committed and pushed before its run.
+Open the local URL printed by Streamlit. Compare the three portfolios, move the minimum SGOV reserve slider to 100% to check the stop condition, then open the signal and data card. The app uses bundled data and needs no credentials.
 
-See the [Lab 20 record](docs/lab20.md) for validation, AI use, and the individual checkout.
+Run `python decision.py` to reproduce the [saved output](docs/decision-output.json). Compare numbers to displayed precision. The CSV feeds the estimator and optimizer in `portfolio.py`. `decision.py` applies the mandate and builds the diagnostics. `app.py` displays the results and calls the same optimizer for interactive stresses.
+
+- [Decision memo](docs/decision-memo.md)
+- [Validation and AI use](docs/validation-and-ai-use.md)
 
 I am a student, not a financial professional. This document was prepared for FIN 43900 (AI Finance Applications, Purdue) as a class learning exercise. It is not professional investment research or financial advice. I used OpenAI Codex to help with research, analysis, calculations, and drafting. Any remaining errors are my own.
