@@ -17,7 +17,7 @@ Use the preserved Lab 20 candidate as the documented starting comparison for thi
 
 ## Locked Changed-Input Record
 
-**Student prediction supplied.** Pre-run GitHub commit permalink and actual result are pending. The prior Lab 20 90-month prediction remains in the Lab 20 record. This record uses a fresh cost setting.
+**Prediction locked before the run.** Codex verified the 35 bp prediction in the [pre-run GitHub commit](https://github.com/bpascuetc/Project-2-FIN439/commit/d7943403f0b8b3677397573eac616e1e417efc1b) before executing the changed setting. The prior Lab 20 90-month prediction remains in the Lab 20 record. The student's original text is preserved below.
 
 ```text
 Project 2 – Stress-test prediction (written before running the Stress tests tab)
@@ -53,5 +53,14 @@ Comparison
 Against my prediction:
 Against original 30% / 0% / 70%:
 ```
+
+### Actual result
+
+- **Run:** November 20, 2026. Codex used Streamlit AppTest to set **Incremental annual cost** to **35 bp** in **Stress tests**, with **Minimum SGOV reserve** at **3%** and the original 60-month inputs. The app reported **PASS · VTI 35%, BND 0%, SGOV 65% · 6.66% estimated net return**.
+- **Model output:** Estimated annual volatility was **5.64%**. **64 of 231** grid mixes qualified. Volatility comes from the model output. The interactive result displays the weights and net return. [Saved result](locked-35bp-result.json)
+- **Against the prediction:** The PASS verdict, weights and rounded net return matched. Volatility fell within the predicted 5.5–5.7% range.
+- **Against the original portfolio:** At the same 35 bp cost, the original 30/0/70 mix earns about **6.19%** and fails the **6.50%** floor. Reoptimization shifts **5 percentage points** from SGOV to VTI. Relative to the zero-cost baseline, the new mix's estimated net return increases about **12 bp** and estimated volatility increases **0.79 percentage points**. The higher return reflects the new allocation.
+- **Decision effect:** The result supports keeping the approved recommendation to **reject adoption for now and authorize 0%**. The 5-point move is within the proposed 10-point limit for this test. The separate estimate and window stresses still moved VTI by 15 points.
+- **Scope:** The original 1,230 bp comment was outside this test. The 97/0/3 mix is outside the 5-point grid, and the app's cost slider ends at 100 bp.
 
 I am a student, not a financial professional. This document was prepared for FIN 43900 (AI Finance Applications, Purdue) as a class learning exercise. It is not professional investment research or financial advice. I used OpenAI Codex to help with research, analysis, calculations, and drafting. Any remaining errors are my own.
